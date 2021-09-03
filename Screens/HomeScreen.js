@@ -11,7 +11,7 @@ const HomeScreen = props => {
   return (
     <View>
       <ImageBackground
-        source={require('../assets/images/utar-logos_black.png')}
+        source={require('../assets/images/Background.jpg')}
         style={{width: '100%',
         height: '100%',
         resizeMode: 'cover',
@@ -19,24 +19,10 @@ const HomeScreen = props => {
         {/* Title */}
         <Text style={{fontSize: 80,
         fontWeight: 'bold',
-        color: 'white',
+        color: 'grey',
         width: '70%',
         marginLeft: 25,}}>Hello World</Text>
 
-        {/* Button */}
-        <TouchableOpacity
-          style={{backgroundColor: 'white',
-          width: 200,
-          height: 40,
-          borderRadius: 10,
-          marginLeft: 25,
-          marginTop: 25,
-          justifyContent: 'center',
-          alignItems: 'center'}}
-          onPress={() => navigation.navigate('Location Search')}>
-          <Text style={{fontSize: 16,
-          fontWeight: 'bold'}}>Explore nearby stays</Text>
-        </TouchableOpacity>
       </ImageBackground>
 
       {/* Search Bar */}

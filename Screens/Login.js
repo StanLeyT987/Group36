@@ -9,7 +9,6 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import {useNavigation} from '@react-navigation/native';
 
 
-
   const LoginScreen = props =>{
 
     const save = async() =>{
@@ -42,7 +41,7 @@ import {useNavigation} from '@react-navigation/native';
         style={{
             flex: 1,
             backgroundColor: '#bfc7c1'}}>
-        <View style={{flex:1,alignSelf:'center',top:50}}>
+        <View style={{flex:1}}>
             <Text 
                 style={{
                   fontSize: 22,
@@ -54,8 +53,6 @@ import {useNavigation} from '@react-navigation/native';
         <View style={{flex:1}}>
             <TextInput
                 style={{
-                    top:150,
-                    alignSelf:'center',
                     width: 300,
                     backgroundColor: '#Ffffff',
                     padding: 15,
@@ -68,8 +65,6 @@ import {useNavigation} from '@react-navigation/native';
 
             <TextInput
                 style={{
-                    top:150,
-                    alignSelf:'center',
                     width: 300,
                     backgroundColor: '#Ffffff',
                     padding: 15,
@@ -85,19 +80,16 @@ import {useNavigation} from '@react-navigation/native';
         <View style={{
                 flex:1,
                 flexDirection:'row',
-                justifyContent:'space-evenly',
-                }}>
-            <View style={{
-              top:300
-            }}>
-                
+                justifyContent:'space-evenly',}}>
+            <View>
                 <TouchableOpacity style={{
+                    marginBottom: 20,
                     backgroundColor: '#f15454',
                     justifyContent: 'center',
                     height: 50,
                     width:100,
                     borderRadius: 10,
-                }}  onPressIn={()=>navigation.navigate('Register')}>
+                }} onPressIn={()=>navigation.navigate('Register')}>
                     <Text
                         style={{
                             fontSize: 18,
@@ -107,13 +99,10 @@ import {useNavigation} from '@react-navigation/native';
                         Register
                     </Text>
                 </TouchableOpacity>
-                {/* <TouchableOpacity><Text>TouchMe</Text></TouchableOpacity> */}
             </View>
-            <View style={{
-              top:300
-            }}>
+            <View>
                 <TouchableOpacity style={{
-                    
+                    marginBottom: 20,
                     backgroundColor: '#f15454',
                     justifyContent: 'center',
                     height: 50,

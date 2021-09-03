@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View, TextInput, FlatList, Text, Pressable} from 'react-native';
+import {View, TextInput, FlatList, Text, Pressable, TouchableOpacity} from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
 import {useNavigation} from '@react-navigation/native';
 import firestore from '@react-native-firebase/firestore';
@@ -52,7 +52,7 @@ const Search = props => {
       <FlatList
         data={search}
         renderItem={({item}) => (
-          <Pressable
+          <TouchableOpacity
             style={{flexDirection: 'row',
             alignItems: 'center',
             marginVertical: 10,
@@ -67,7 +67,7 @@ const Search = props => {
               <Entypo name={'location-pin'} size={30} />
             </View>
             <Text>{item.description}</Text>
-          </Pressable>
+          </TouchableOpacity>
         )}
       />
     </View>

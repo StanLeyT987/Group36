@@ -54,14 +54,6 @@ const Register = ({navigation}) => {
       >
         <Text style={styles.btnText}>Register</Text>
       </TouchableOpacity>
-
-      <Text style={styles.text2}>Have An Account? 
-      <TouchableOpacity
-      onPress={() => navigation.navigate('Log In')}>
-          <Text style={styles.signin}>Log In</Text>
-      </TouchableOpacity>
-      </Text>
-
     </View>
   );
 };
@@ -82,7 +74,7 @@ const styles = StyleSheet.create({
     margin: 10,
     color: '#050505',
     marginBottom: 60,
-    fontFamily: 'Arial',
+    
   },
   navButton: {
     marginTop: 15,
@@ -100,13 +92,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 3,
-    fontFamily: 'Arial',
+    
   },
   btnText:{
     fontSize: 18,
     textAlign: 'center',
     color: '#Ffffff',
-    fontFamily: 'Arial',
+    
   },
   inputContainer: {
         marginTop: 5,

@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react';
 import {View} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import LoginScreen from '../screens/Profile/LoginScreen';
-import ProfileScreen from '../screens/Profile/ProfileScreen';
+import LoginScreen from '../Screens/LoginScreen';
+import ProfileScreen from '../Screens/ProfileScreen';
 
 const ProfileNavigator = props => {
   const [username, setUsername] = useState('');
