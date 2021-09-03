@@ -39,10 +39,10 @@ const Search = props => {
   }, []);
 
   return (
-    <View style={styles.container}>
+    <View style={{ margin: 20}}>
       {/* Input component */}
       <TextInput
-        style={styles.input}
+        style={{fontSize: 20,}}
         placeholder="Where are you going?"
         value={inputText}
         onChangeText={setInputText}
@@ -53,12 +53,20 @@ const Search = props => {
         data={search}
         renderItem={({item}) => (
           <Pressable
-            style={styles.row}
+            style={{flexDirection: 'row',
+            alignItems: 'center',
+            marginVertical: 10,
+            paddingVertical: 15,
+            borderBottomWidth: 1,
+            borderColor: 'lightgrey'}}
             onPress={() => navigation.navigate('Guests')}>
-            <View style={styles.iconContainer}>
+            <View style={{backgroundColor: 'lightgrey',
+            borderRadius: 10,
+            padding: 7,
+            marginRight: 15,}}>
               <Entypo name={'location-pin'} size={30} />
             </View>
-            <Text style={styles.locationText}>{item.description}</Text>
+            <Text>{item.description}</Text>
           </Pressable>
         )}
       />
